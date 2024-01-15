@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" lang="en">
+<head>
+    <title>new_student</title>
+</head>
+<body>
+<h1>Add new student</h1>
+
+<form th:action="@{/admin/new_student}" th:method="post" th:object="${student}">
+    First name: <input type="text" th:field="*{firstName}"><br><br>
+    Last name:<input type="text" th:field="*{lastName}"><br><br>
+    Login:<input type="text" th:field="*{login}"><br><br>
+    Password:<input type="text" th:field="*{password}"><br><br>
+    Email:<input type="text" th:field="*{email}"><br><br>
+    Telephone number:<input type="number" th:field="*{telephoneNumber}"><br><br>
+    <p><input type="submit" value="Submit"/></p>
+</form>
+</body>
+</html>
+
+
+
+
+
+

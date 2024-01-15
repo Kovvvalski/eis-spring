@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>students</title>
+</head>
+<body>
+<h1>ALL STUDENTS</h1>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Login</th>
+        <th>Email</th>
+        <th>Telephone</th>
+    </tr>
+    <tr th:each="lecturer : ${lecturers}">
+        <td th:text="${lecturer.id}"></td>
+        <td th:text="${lecturer.firstName}"></td>
+        <td th:text="${lecturer.lastName}"></td>
+        <td th:text="${lecturer.login}"></td>
+        <td th:text="${lecturer.email}"></td>
+        <td th:text="${lecturer.telephoneNumber}"></td>
+    </tr>
+</table>
+</body>
+</html>
